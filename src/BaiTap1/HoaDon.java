@@ -40,6 +40,7 @@ public class HoaDon {
     }
     public static class Builder{
         HoaDonHeader header = new HoaDonHeader();
+        private ArrayList<CTHD> chitiet;
         public Builder() {
         }
         public Builder addMaHD(String MaHD){

@@ -10,28 +10,20 @@ package BaiTap3;
  * @author FPT
  */
 public class Main {
-     ShapeFactory Hinh1 = ShapeFactory.Createinstance();
-        ShapeFactory Hinh2 = ShapeFactory.Createinstance();
-        ShapeFactory Hinh3 = ShapeFactory.Createinstance();
+     /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        ShapeFactory shape1 = ShapeFactory.createInstance();
+    
+        shape1.setType(ShapeType.Circle);
+        System.out.println("Hình 1: "+shape1.getType());
         
-        Hinh1.setType(ShapeType.Triangle);
-        Shape H1 = Hinh1.createShape();
+        shape1.setType(ShapeType.Rectangle);
+        System.out.println("Hình 2: "+shape1.getType());
         
-        System.out.println("\n" + H1.Draw());
+        shape1.setType(ShapeType.Triangle);
+        System.out.println("Hình 3: "+shape1.getType());
         
-        Hinh2.setType(ShapeType.Circle);
-        H1 = Hinh1.createShape();
-        Shape H2 = Hinh2.createShape();
-        
-        System.out.println("\n" + H1.Draw());
-        System.out.println(H2.Draw());
-        
-        Hinh3.setType(ShapeType.Rectangle);
-        H1 = Hinh1.createShape();
-        H2 = Hinh2.createShape();
-        Shape H3 = Hinh3.createShape();
-        System.out.println("\n" + H1.Draw());
-        System.out.println(H2.Draw());
-        System.out.println(H3.Draw());
     }
 }

@@ -20,8 +20,8 @@ public class Main {
                 .addMaHD("HD01")
                 .addTenKH("Nguyen Thi Xuan")
                 .addNgayBan(new SimpleDateFormat("dd/MM/yy").parse("01/09/2000")
-                
-                
+                .addSanPham(sanpham)
+                .build()
         System.out.println(hoadon.toString());
     }
 }
